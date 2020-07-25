@@ -22,7 +22,7 @@ Estudando com a galera do FullStack Master [FullStack Master](https://tuliofaria
 * Drive
 
 ## Author:
-**Renato** [linkedIn](linkedin.com/in/renato-domingues-silva/) / [GitHub](github.com/RenatoDomingues)
+**Renato** [linkedIn](linkedin.com/in/renato-domingues-silva-094b971b0/) / [GitHub](github.com/RenatoDomingues)
 
 ## Acknowledgments
 
