@@ -1,17 +1,18 @@
 ## palpite-box
 Estudando com a galera do FullStack Master [FullStack Master](https://tuliofaria.dev); 
-**tailwindcss** **JavaScript** **next** **React** **react-dom** **swr** **autoprefixer** **npm** 
+**-tailwindcss** **-JavaScript** **-next** **-React** **-react-dom** **-swr** **-autoprefixer** **-npm** 
 
 [![HitCount](http://hits.dwyl.com/{RenatoDomingues}/{palpite-box}.svg)](http://hits.dwyl.com/{RenatoDomingues}/{palpite-box})
 
 ## Pré-requisitos:
 
-´´´
+``
 npm install
 npm run dev
 react
 react-dom
-´´´
+``
+
 ## Construído com:
 
 * next
