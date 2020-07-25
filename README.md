@@ -7,10 +7,10 @@ Estudando com a galera do FullStack Master [FullStack Master](https://tuliofaria
 ## Pré-requisitos:
 
 ``
-npm install
-npm run dev
-react
-react-dom
+** npm install
+** npm run dev
+** react
+** react-dom
 ``
 
 ## Construído com:
