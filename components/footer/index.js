@@ -1,11 +1,11 @@
 
 import React from 'react'
 
-const Footer = () =>{
+const Footer = () => {
     return (
         <div className='bg-gray-700 p-4'>
             <div className='container mx-auto text-center font-bold text-white'>
-                Projeto desenvolvido por: Renato Domingues / {' '} 
+                Projeto desenvolvido por: Renato Domingues:  {' '} 
                 <a className='hover:underline' href='linkedin.com/in/renato-domingues-silva-094b971b0'>Linkedin</a> / {' '}
                 <a className='hover:underline' href='https://github.com/RenatoDomingues'>GitHub</a>
                 <div className='mt-2'>

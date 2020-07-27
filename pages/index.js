@@ -6,7 +6,7 @@ import useSWR from 'swr'
 const fetcher = (...args) => fetch(...args).then(res => res.json())//create a function, strategy (...args) that catches cada arguments passing another function
 
 //Component=>
-const Index = () =>{
+const Index = () => {
   const {data, error} = useSWR('/api/get-promo', fetcher)
   //return (<pre>{JSON.stringify(data)}</pre>)//if you are returning data
   return (

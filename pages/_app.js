@@ -4,7 +4,7 @@ import React from 'react'
 import '../css/styles.css'//=>start do 0 do css "tailwindcss"
 import Layout from '../components/layout'
 
-const MyApp = ({Component, pageProps}) =>{
+const MyApp = ({Component, pageProps}) => {
     return (
         <Layout>
              <Component {...pageProps}/>
