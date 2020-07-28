@@ -2,6 +2,7 @@
 import React from 'react'
 import Link from 'next/link'
 import useSWR from 'swr'
+import PageTitle from '../components/PageTitle'
 
 const fetcher = (...args) => fetch(...args).then(res => res.json())//create a function, strategy (...args) that catches cada arguments passing another function
 
@@ -11,6 +12,7 @@ const Index = () => {
   //return (<pre>{JSON.stringify(data)}</pre>)//if you are returning data
   return (
       <div>
+          <PageTitle title='Seja bem vindo'/>
           <p className='mt-12 text-center'>
             O restaurante X sempre busca por atender melhor seus clientes.<br/>
               Por isso, estamos sempre abertos a ouvir a sua opinião.

@@ -1,14 +1,19 @@
 
 //using next=>
 import {GoogleSpreadsheet} from 'google-spreadsheet'//is import
-import credentials from '../../credentials.json'
-const doc = new GoogleSpreadsheet('1e40ylCqeW-xBZrP5IJ6wxpzHw5-j8oyqauCIej9johs')//create nova instancia
+//import credentials from '../../credentials.json'
+const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID)//create nova instancia
 
 //communication form http <=> (req, res)=>
 
 export default async (req, res) => {
+    //console.log(process.env.VAR1)//para saber se está funcionado, uso só backend
     try {
-        await doc.useServiceAccountAuth(credentials)
+        //await doc.useServiceAccountAuth(credentials)
+        await doc.useServiceAccountAuth({
+            client_email: process.env.SHEET_CLIENT_EMAIL,
+            private_key: process.env.SHEET_PRIVATE_KEY
+        })
         await doc.loadInfo()
         //console.log(doc.title)
 
