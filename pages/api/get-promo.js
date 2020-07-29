@@ -3,16 +3,18 @@
 import {GoogleSpreadsheet} from 'google-spreadsheet'//is import
 //import credentials from '../../credentials.json'
 const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID)//create nova instancia
+import {fromBase64} from '../../utils/base64'
 
 //communication form http <=> (req, res)=>
 
 export default async (req, res) => {
     //console.log(process.env.VAR1)//para saber se está funcionado, uso só backend
+    //console.log(fromBase64(process.env.SHEET_PRIVATE_KEY))
     try {
         //await doc.useServiceAccountAuth(credentials)
         await doc.useServiceAccountAuth({
             client_email: process.env.SHEET_CLIENT_EMAIL,
-            private_key: process.env.SHEET_PRIVATE_KEY
+            private_key: fromBase64(process.env.SHEET_PRIVATE_KEY)
         })
         await doc.loadInfo()
         //console.log(doc.title)
